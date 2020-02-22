@@ -4,8 +4,10 @@ Chooses a suitable language from key-values and set it in the variable.
 ### Installation
 1. Download it.
 1. Compile Nginx with:
+```
 $ ./configure --add-module=path/to/nginx_select_lang_module
 $ make install
+```
 
 #### How it works
 1. Find user's selected language in the cookie name `lang`, e.g. `lang=ja`.
