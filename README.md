@@ -1,4 +1,4 @@
-# Nginx HTTP select lang Modlue
+# Nginx HTTP Select Lang modlue
 Chooses a suitable language from key-values and set it in the variable.
 
 ### Installation
