@@ -13,7 +13,7 @@ $ make install
 1. Find user's selected language in the cookie name `lang`, e.g. `lang=ja`.
 1. If the cookie is not defined, find it in the `Accept-Language` header.
 1. Other than the avobe, use the second argument of the directive as a default language.
-1. Set the language to the variable name, it must start with `$`, e.g. `$lang`, the first argument of the directive.
+1. Set the language to the variable name, it must start with `$`, e.g. `$lang_selected`, the first argument of the directive.
 
 #### Form
 ```
@@ -24,9 +24,11 @@ $ make install
 
 #### Example configuration:
 
-* `$lang` is the name of a variable.
-* `en`, `ja`, `zh-hans`, `zh-hant` are available languages and `zh-hans` is the representation of the following languages: `zh`, `zh-cn`, `zh-sg:zh-tw`.
-* `en` is a default language.
+* `$lang_selected` is the name of a variable.
+* `en`, `ja`, `zh-hans`, `zh-hant` are available languages.
+* `zh-hans` is the representation of the following languages: `zh-hans`, `zh`, `zh-cn`, `zh-sg:zh-tw`.
+* `zh-hant` is the representation of the following languages: `zh-hant`, and `zh-hk`.
+* The first leftmost one `en` is the default language.
 
 ```
 http {
